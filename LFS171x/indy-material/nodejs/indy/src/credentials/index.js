@@ -58,23 +58,98 @@ exports.acceptRequest = async function(theirDid, encryptedMessage) {
         let value;
         switch(attr) {
             case "name":
-                value = await indy.pairwise.getAttr(theirDid, 'name') || "Alice";
+                value = await indy.pairwise.getAttr(theirDid, 'name') || "Harry Smith";
                 break;
-            case "degree":
-                value = "Bachelor of Science, Marketing";
+            case "surName":
+                value = "Smith";
                 break;
-            case "status":
-                value = "graduated";
+            case "address":
+                value = "48 Boston St., Sterling Heights, MI 48310";
                 break;
-            case "ssn":
-                value = "123-45-6789";
+            case "dob":
+                value = "29/11/1990";
                 break;
-            case "year":
-                value = "2015";
+            case "nationality":
+                value = "United States of America";
                 break;
-            case "average":
-                value = "5";
-                break;
+                case "passportNo":
+                    value = "J1P2R3A4";
+                    break;
+                case "passportIssuedBy":
+                    value = "United States Department of State";
+                    break;
+                case "passportIssuedOn":
+                    value = "18/01/2012";
+                    break;
+                case "passportExpiryDate":
+                    value = "17/01/2022";
+                    break;
+                case "countryCode":
+                    value = "USA";
+                    break;
+                case "passportType":
+                    value = "P";
+                    break;
+                case "passportplaceOfIssue":
+                    value = "Milwaukee";
+                    break;
+                case "gender":
+                    value = "Male";
+                    break;
+                case "birthPlace":
+                    value = "Milwaukee";
+                    break;
+                case "fathersName":
+                    value = "John Smith";
+                    break;
+                case "mothersName":
+                    value = "Clara Smith";
+                    break;
+                case "fileNo":
+                    value = "AJPRJ1P2R3A4";
+                    break;
+                case "drivingLicenceNo":
+                    value = "D08954142";
+                    break;
+                case "dlIssuedOn":
+                    value = "03/01/2016";
+                    break;
+                case "dlExpiryDate":
+                    value = "01/01/2039";
+                    break;
+                case "employer":
+                    value = "GE Mortors";
+                    break;
+                case "officeAddress":
+                    value = "2nd Floor, Tower Warp, 123 Main St, Milwaukee 39216-1234";
+                    break;
+                case "annualSalary":
+                    value = "$5000";
+                    break;
+                case "designation":
+                    value = "Software Engineer Senior";
+                    break;
+                case "dateOfJoining":
+                    value = "26/12/2016";
+                    break;
+            // case "degree":
+            //     value = "Bachelor of Science, Marketing";
+            //     break;
+            // case "status":
+            //     value = "graduated";
+            //     break;
+            // case "ssn":
+            //     value = "123-45-6789";
+            //     break;
+            // case "year":
+            //     value = "2015";
+            //     break;
+            // case "average":
+            //     value = "5";
+            //     break;
+            // case "age":
+            //     value = "25";
+            //     break;
             default:
                 value = "someValue";
         }

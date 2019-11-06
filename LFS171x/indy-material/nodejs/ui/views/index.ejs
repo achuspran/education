@@ -159,6 +159,7 @@
             <a class="w3-right w3-bar-item w3-padding-16">Welcome <%=name%></a>
             <a href=""><img class="w3-left w3-bar-item" width="55px" height="55px" src="/images/sovrinIcon.png"></a>
             <a href="#relationships" id="relationships_link" class="w3-left w3-bar-item w3-button w3-padding-16 tab_link" onclick="showTab('relationships')" >Relationships</a>
+            <a href="#harry" id="harry_link" class="w3-left w3-bar-item w3-button w3-padding-16 tab_link" onclick="showTab('harry')" >Harry's Wallet</a>
             <a href="#credentials" id="credentials_link" class="w3-left w3-bar-item w3-button w3-padding-16 tab_link" onclick="showTab('credentials')" >Credentials</a>
             <a href="#proofs" id="proofs_link" class="w3-left w3-bar-item w3-button w3-padding-16 tab_link" onclick="showTab('proofs')" >Proof Requests</a>
             <a href="#issuing" id="issuing_link" class="w3-left w3-bar-item w3-button w3-padding-16 tab_link" onclick="showTab('issuing')" >Issuing</a>
@@ -187,6 +188,7 @@
             <% include issuing.ejs %>
             <% include relationships.ejs %>
             <% include messages.ejs %>
+            <% include harry.ejs %>
         </div>
         <footer style="position:fixed;bottom:0;background: black;width: 100%;">
             <p style="text-align: center;color: white;">My Endpoint DID: <%=endpointDid%></p>

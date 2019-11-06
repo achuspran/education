@@ -61,6 +61,7 @@
     <a href="#issuing" id="issuing_link" class="w3-left w3-bar-item w3-button w3-padding-16 tab_link" onclick="showTab('issuing')" >Issuing</a>
     <a href="#relationships" id="relationships_link" class="w3-left w3-bar-item w3-button w3-padding-16 tab_link" onclick="showTab('relationships')" >Relationships</a>
     <a href="#messages" id="messages_link" class="w3-left w3-bar-item w3-button w3-padding-16 tab_link" onclick="showTab('messages')" >Messages</a>
+    <a href="#harry" id="harry_link" class="w3-left w3-bar-item w3-button w3-padding-16 tab_link" onclick="showTab('harry')" >Harry's Wallet</a>
 </div>
 
 <div class="w3-row-padding w3-center w3-margin-top">
@@ -175,6 +176,329 @@
             </form>
         </div>
     </div>
+
+    <div id="harry" class="tab" style="display:none;width:50%; border:1px solid #ccc;">
+        <body>
+          <header class="w3-container w3-card-4 w3-theme">
+              <div class="w3-col s9">
+                <h3>Credential Wallet</h3>
+              </div>
+              <div class="w3-col s2">
+                <h3><img src="https://blogpr.000webhostapp.com/upload/harry.png" alt="Avatar" style="width:33%"></h3>
+                <!-- <h3><span class="fa fa-user" style="font-size:25px;"></span></h3> -->
+              </div>
+            <div class="w3-col s1">
+              <h3 onclick="document.getElementById('messages').style.display='block'">
+                <span class="fa fa-bell-o notiContainer" style="font-size:25px;"><span class="w3-badge w3-red notiBadge">1</span></span>
+              </h3> 
+            </div>
+          </header>
+               
+          <div id="proofRequirementSection" class="w3-panel">
+            <div class="w3-card-4 padding10">
+              <p><img src="https://blogpr.000webhostapp.com/upload/logo.png" alt="Logo" style="width: 120px; height: 31px; margin: -3px 0 0 0;"> is requesting for the below documents to create a new Account.</p>
+              <ol class="w3-left-align">
+                <li>Address & Phone Number</li>
+                <li>Social Security Number or ITIN</li>
+                <li>Current driver's license or other ID numbers</li>
+                <li>You must be at least 13 years old to apply online</li>
+              </ol>
+              <div class="w3-row w3-center">
+                <button class="w3-button w3-blue allowBtn">Allow</button>
+                <button class="w3-button rejectBtn">Reject</button>
+              </div>
+            </div>
+          </div>
+      
+          <div id="prefilledForm" class="w3-panel">
+            <div class="w3-card-4 padding10">
+              <form class="w3-margin applicationData">
+                <div class="formSection"><p>Personal Information</p></div>
+                <div class="w3-row w3-section" style="position: relative;">
+                  <div class="w3-rest">
+                    <label>Name</label>
+                    <input class="w3-input w3-border" type="text" placeholder="Full Name">
+                    <img src="https://blogpr.000webhostapp.com/upload/Tick.png" class="verifiedIcon" alt="badge"  width="20%">
+                  </div>
+                </div>
+                <div class="w3-row w3-section">
+                  <div class="w3-rest">
+                    <label>Address</label>
+                    <textarea class="w3-input w3-border" style="resize:none"></textarea>
+                  </div>
+                </div>
+                <div class="w3-row w3-section">
+                  <div class="w3-rest">
+                    <label>Date of Birth</label>
+                    <input class="w3-input w3-border" type="text" placeholder="dd/mm/yyyy">
+                  </div>
+                </div>
+                <div class="w3-row w3-section">
+                  <div class="w3-rest">
+                    <label style="margin-right: 10px;">Gender</label><br>
+                    <input class="w3-radio" type="radio" name="gender" value="male" checked>
+                    <label style="margin: 11px 15px -4px -4px;">Male</label>
+      
+                    <input class="w3-radio" type="radio" name="gender" value="female">
+                    <label style="margin: 11px 15px -4px -4px;">Female</label>
+      
+                    <input class="w3-radio" type="radio" name="gender" value="" disabled>
+                    <label style="margin: 11px 15px -4px -4px;">Other</label>
+                  </div>
+                </div>
+                <div class="formSection"><p>Employment Information</p></div>
+                <div class="w3-row w3-section">
+                  <div class="w3-rest">
+                    <label>Company</label>
+                    <input class="w3-input w3-border" type="text">
+                  </div>
+                </div>
+                <div class="w3-row w3-section">
+                  <div class="w3-rest">
+                    <label>Occupation</label>
+                    <select class="w3-select" name="option">
+                      <option value="" disabled selected>Private</option>
+                      <option value="1">Public</option>
+                      <option value="2">Unemployed</option>
+                      <option value="3">Business</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="w3-row w3-section">
+                  <div class="w3-rest">
+                    <label>Salary Range</label>
+                    <select class="w3-select" name="option">
+                      <option value="" disabled selected>$8,000 - $10,000</option>
+                      <option value="1">$10,000 - $12,000 </option>
+                      <option value="2">$12,000 - $14,000</option>
+                      <option value="3">$14,000 and Above</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="formSection"><p>Contact Information</p></div>
+                <div class="w3-row w3-section">
+                  <div class="w3-rest">
+                    <label>Phone Number</label>
+                    <input class="w3-input w3-border" type="text">
+                  </div>
+                </div>
+                <div class="w3-row w3-section">
+                  <div class="w3-rest">
+                    <label>Email</label>
+                    <input class="w3-input w3-border" type="text">
+                  </div>
+                </div>
+                <div class="w3-row w3-center">
+                  <button class="w3-button w3-blue allowBtn">Continue</button>
+                  <button class="w3-button rejectBtn">Cancel</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div id="credentialSection" class="w3-panel">
+            <div class="w3-row theRow" onclick="showHideCredDetails('passportDetails')">
+              <div class="w3-card-4 padding10 cred">
+                <div class="w3-container">
+                  <div class="w3-col s3">
+
+              <img src="https://blogpr.000webhostapp.com/upload/passport.png" alt="badge" style="width: 38px; height: 53px;">
+                    <!-- <span class="fa fa-award" style="font-size:25px;"> -->
+                  </div>
+                  <div class="w3-col s9 w3-container">
+                    <h6>Passport</h6>
+                  </div>
+                  <div class="w3-row" id="passportDetails">
+                    <div class="w3-col s12 w3-text-left">
+                      <div class="w3-row">
+                        <div class="w3-col m4 l3">
+                          <label class="labelText">Name:</label>
+                        </div>
+                        <div class="w3-col m8 l9 labelValue">
+                          Harry Doe
+                        </div>
+                      </div>
+                      <div class="w3-row">
+                        <div class="w3-col m4 l3">
+                          <label class="labelText">Passport ID:</label>
+                        </div>
+                        <div class="w3-col m8 l9 labelValue">
+                          K1253523
+                        </div>
+                      </div>
+                      <div class="w3-row">
+                        <div class="w3-col m4 l3">
+                          <label class="labelText">Address:</label>
+                        </div>
+                        <div class="w3-col m8 l9 labelValue">
+                          door#292, xyz street, Bangalore - 560066
+                        </div>
+                      </div>
+                      <div class="w3-row">
+                        <div class="w3-col m4 l3">
+                          <label class="labelText">Issued On:</label>
+                        </div>
+                        <div class="w3-col m8 l9 labelValue">
+                          dd/mm/yyyy
+                        </div>
+                      </div>
+                      <div class="w3-row">
+                        <div class="w3-col m4 l3">
+                          <label class="labelText">Expiry:</label>
+                        </div>
+                        <div class="w3-col m8 l9 labelValue">
+                          dd/mm/yyyy
+                        </div>
+                      </div>
+                      <div class="w3-row">
+                        <div class="w3-col m4 l3">
+                          <label class="labelText">Issued By:</label>
+                        </div>
+                        <div class="w3-col m8 l9 labelValue">
+                          Republic of India
+                        </div>
+                      </div>
+                      <div class="w3-row">
+                        <div class="w3-col m4 l3">
+                          <label class="labelText">Place of Issue:</label>
+                        </div>
+                        <div class="w3-col m8 l9 labelValue">
+                          Bangalore
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="w3-row theRow" onclick="showHideCredDetails('drivingDetails')">
+              <div class="w3-card-4 padding10 cred">
+                <div class="w3-container">
+                  <div class="w3-col s3">
+                      <img src="https://blogpr.000webhostapp.com/upload/dl.png" alt="badge" width="40%">
+                  </div>
+                  <div class="w3-col s9 w3-container">
+                    <h6>Driving Licence</h6>
+                  </div>
+                  <div class="w3-row" id="drivingDetails">
+                    <div class="w3-col s12">
+                      <div class="w3-row">
+                        <div class="w3-col m4 l3">
+                          <label class="labelText">Name:</label>
+                        </div>
+                        <div class="w3-col m8 l9 labelValue">
+                          Harry Doe
+                        </div>
+                      </div>
+                      <div class="w3-row">
+                        <div class="w3-col m4 l3">
+                          <label class="labelText">Licence ID:</label>
+                        </div>
+                        <div class="w3-col m8 l9 labelValue">
+                          dhfg/7362/6dg
+                        </div>
+                      </div>
+                      <div class="w3-row">
+                        <div class="w3-col m4 l3">
+                          <label class="labelText">Address:</label>
+                        </div>
+                        <div class="w3-col m8 l9 labelValue">
+                          vgdaf, bjh,fjhjhjj7-90909nh
+                        </div>
+                      </div>
+                      <div class="w3-row">
+                        <div class="w3-col m4 l3">
+                          <label class="labelText">DOB:</label>
+                        </div>
+                        <div class="w3-col m8 l9 labelValue">
+                          dd/mm/yyyy
+                        </div>
+                      </div>
+                      <div class="w3-row">
+                        <div class="w3-col m4 l3">
+                          <label class="labelText">Issued On:</label>
+                        </div>
+                        <div class="w3-col m8 l9 labelValue">
+                          dd/mm/yyyy
+                        </div>
+                      </div>
+                      <div class="w3-row">
+                        <div class="w3-col m4 l3">
+                          <label class="labelText">Expiry:</label>
+                        </div>
+                        <div class="w3-col m8 l9 labelValue">
+                          dd/mm/yyyy
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="w3-row theRow" onclick="showHideCredDetails('employerDetails')">
+              <div class="w3-card-4 padding10 cred">
+                <div class="w3-container">
+                  <div class="w3-col s3">
+                      <img src="https://blogpr.000webhostapp.com/upload/employer.png" alt="badge" width="40%">
+                  </div>
+                  <div class="w3-col s9 w3-container">
+                    <h6>Employment Proof from GE</h6>
+                  </div>
+                  <div class="w3-row" id="employerDetails">
+      
+                      <div class="w3-row">
+                        <div class="w3-col m4 l3">
+                          <label class="labelText">Name:</label>
+                        </div>
+                        <div class="w3-col m8 l9 labelValue">
+                          Harry Doe
+                        </div>
+                      </div>
+                      <div class="w3-row">
+                        <div class="w3-col m4 l3">
+                          <label class="labelText">Company:</label>
+                        </div>
+                        <div class="w3-col m8 l9 labelValue">
+                          Company Name
+                        </div>
+                      </div>
+                      <div class="w3-row">
+                        <div class="w3-col m4 l3">
+                          <label class="labelText">Date of joining:</label>
+                        </div>
+                        <div class="w3-col m8 l9 labelValue">
+                          dd/mm/yyyy
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="notificationMessage" class="w3-modal">
+              <div class="w3-modal-content">
+                <div class="w3-container">
+                  <span onclick="document.getElementById('notificationMessage').style.display='none'"
+                  class="w3-button w3-display-topright">&times;</span>
+                  <p>Some text in the Modal..</p>
+                  <p>Some text in the Modal..</p>
+                </div>
+              </div>
+            </div>
+      
+            <div id="messages" class="w3-container w3-card w3-center w3-animate-bottom" style="display:none;padding:20px;">
+              <div style="margin-bottom: 15px;">NextGen Bank wants to access your personal and employment details from your wallet. Do you want to share?</div>
+              <button class="w3-btn w3-blue" style="padding: 2px 10px;">Share</button>
+              <button class="w3-btn w3-blue" style="padding: 2px 10px;">Cancel</button>
+            </div>
+        
+          
+          <footer class="w3-container w3-theme-l2" style="position:relative">
+            <p style="text-align: center;color: white;">My Endpoint DID: <%=endpointDid%></p>
+          </footer>
+          </body>
+          </div>
 </div>
 <footer style="position:fixed;bottom:0;background: black;width: 100%;">
     <p style="text-align: center;color: white;">My Endpoint DID: <%=endpointDid%></p>
