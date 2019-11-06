@@ -164,6 +164,7 @@
             <a href="#proofs" id="proofs_link" class="w3-left w3-bar-item w3-button w3-padding-16 tab_link" onclick="showTab('proofs')" >Proof Requests</a>
             <a href="#issuing" id="issuing_link" class="w3-left w3-bar-item w3-button w3-padding-16 tab_link" onclick="showTab('issuing')" >Issuing</a>
             <a href="#messages" id="messages_link" class="w3-left w3-bar-item w3-button w3-padding-16 tab_link" onclick="showTab('messages')" >Messages</a>
+            <a href="#bank" id="bank_link" class="w3-left w3-bar-item w3-button w3-padding-16 tab_link" onclick="showTab('bank')" >Bank</a>
         </div>
         <!--<div class="w3-container w3-card" style="position:fixed;bottom:52px;float:right; right:50px;width:300px;z-index:99;background:white;">-->
             <!--<h5>Chat with Andrew</h5>-->
@@ -189,6 +190,7 @@
             <% include relationships.ejs %>
             <% include messages.ejs %>
             <% include harry.ejs %>
+            <% include bank.ejs %>
         </div>
         <footer style="position:fixed;bottom:0;background: black;width: 100%;">
             <p style="text-align: center;color: white;">My Endpoint DID: <%=endpointDid%></p>

@@ -62,6 +62,7 @@
     <a href="#relationships" id="relationships_link" class="w3-left w3-bar-item w3-button w3-padding-16 tab_link" onclick="showTab('relationships')" >Relationships</a>
     <a href="#messages" id="messages_link" class="w3-left w3-bar-item w3-button w3-padding-16 tab_link" onclick="showTab('messages')" >Messages</a>
     <a href="#harry" id="harry_link" class="w3-left w3-bar-item w3-button w3-padding-16 tab_link" onclick="showTab('harry')" >Harry's Wallet</a>
+    <a href="#bank" id="bank_link" class="w3-left w3-bar-item w3-button w3-padding-16 tab_link" onclick="showTab('bank')" >Bank</a>
 </div>
 
 <div class="w3-row-padding w3-center w3-margin-top">
@@ -176,7 +177,215 @@
             </form>
         </div>
     </div>
-
+    <div id="bank" class="tab" style="display:none;width:100%;">
+      <div id="bankFirstPage">
+    
+        <div class="w3-panel">
+          <img src="https://blogpr.000webhostapp.com/upload/logo.png" alt="Logo">
+        </div>
+        <header class="w3-container bannerSection">
+          <img src="https://blogpr.000webhostapp.com/upload/bankBanner1.png" alt="Banner Content" style="width:100%">
+          <div><img src="https://blogpr.000webhostapp.com/upload/bannerInclude.png"  alt="Banner 1" class="bannerInclude"></div>
+        </header>
+        <!-- Content -->
+        <div class="w3-content" style="max-width:1100px;margin-bottom:80px">
+          <div class="w3-row">
+            <div class="w3-col m3 w3-center between22"><img class="bankOffers" src="https://blogpr.000webhostapp.com/upload/div4.png"></div>
+            <div class="w3-col m9 offersBasket">
+              <div class="offersContainer">
+                <div class="w3-col m4 w3-center between22" onclick="showNextPage('bankFirstPage', 'bankSecondPage')"><img class="bankOffers" src="https://blogpr.000webhostapp.com/upload/div2.png"></div>
+                <div class="w3-col m4 w3-center between22"><img class="bankOffers" src="https://blogpr.000webhostapp.com/upload/div3.png"></div>
+                <div class="w3-col m4 w3-center between22"><img class="bankOffers" src="https://blogpr.000webhostapp.com/upload/div1.png"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div id="bankSecondPage">
+    
+        <div class="w3-panel">
+          <img src="https://blogpr.000webhostapp.com/upload/logo.png" alt="Logo">
+        </div>
+        <header class="w3-container bannerSection">
+          <img src="https://blogpr.000webhostapp.com/upload/bankBanner2.png" alt="Banner 2" style="width:100%">
+          <div><h2 class="bannerInclude">Anywhere Account Application</h2></div>
+        </header>
+        <!-- Content -->
+        <div class="w3-content" style="max-width:1100px;margin-top:10px;margin-bottom:80px">
+    
+          <div class="w3-container">
+            <div class="w3-display-container" style="height:200px;">
+              <div class="w3-display-middle applicationData">
+                  <h4>To complete the application you will need</h4>
+                  <ul class="w3-left-align">
+                    <li>Address & Phone Number</li>
+                    <li>Social Security Number or ITIN</li>
+                    <li>Current driver's license or other ID numbers</li>
+                    <li>You must be at least 13 years old to apply online</li>
+                  </ul>
+                  <button class="w3-button positive" onclick="showNextPage('bankSecondPage', 'applPage')">Continue Account Request</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div id="applPage">
+    
+        <div class="w3-panel">
+          <img src="https://blogpr.000webhostapp.com/upload/logo.png" alt="Logo">
+        </div>
+        <header class="w3-container bannerSection">
+          <img src="https://blogpr.000webhostapp.com/upload/bankBanner1.png" alt="Banner 3" style="width:100%">
+          <div><h2 class="bannerInclude">Create New Account</h2></div>
+        </header>
+        <!-- Content -->
+    
+        <div class="w3-content" style="max-width:1100px;margin-top:10px;margin-bottom:80px">
+          <div class="w3-display-container" style="height:950px;">
+            <div class="w3-row-padding w3-margin-top">
+    
+              <div class="w3-threequarter">
+                <div class="w3-card padding10">
+                  <form class="w3-margin applicationData">
+                    <div class="formSection"><p>Personal Information</p></div>
+                    <div class="w3-row w3-section">
+                      <div class="w3-rest">
+                        <label>Name</label>
+                        <input class="w3-input w3-border" type="text" placeholder="Full Name">
+                      </div>
+                    </div>
+                    <div class="w3-row w3-section">
+                      <div class="w3-rest">
+                        <label>Address</label>
+                        <textarea class="w3-input w3-border" style="resize:none"></textarea>
+                      </div>
+                    </div>
+                    <div class="w3-row w3-section">
+                      <div class="w3-rest">
+                        <label>Date of Birth</label>
+                        <input class="w3-input w3-border" type="text" placeholder="dd/mm/yyyy">
+                      </div>
+                    </div>
+                    <div class="w3-row w3-section">
+                      <div class="w3-rest">
+                        <label style="margin-right: 10px;">Gender</label>
+                        <input class="w3-radio" type="radio" name="gender" value="male" checked>
+                        <label style="margin: 0 0 0 -8px;">Male</label>
+        
+                        <input class="w3-radio" type="radio" name="gender" value="female">
+                        <label style="margin: 0 0 0 -8px;">Female</label>
+        
+                        <input class="w3-radio" type="radio" name="gender" value="" disabled>
+                        <label style="margin: 0 0 0 -8px;">Other</label>
+                      </div>
+                    </div>
+                    <div class="formSection"><p>Employment Information</p></div>
+                    <div class="w3-row w3-section">
+                      <div class="w3-rest">
+                        <label>Company</label>
+                        <input class="w3-input w3-border" type="text">
+                      </div>
+                    </div>
+                    <div class="w3-row w3-section">
+                      <div class="w3-rest">
+                        <label>Occupation</label>
+                        <select class="w3-select" name="option">
+                          <option value="" disabled selected>Private</option>
+                          <option value="1">Public</option>
+                          <option value="2">Unemployed</option>
+                          <option value="3">Business</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="w3-row w3-section">
+                      <div class="w3-rest">
+                        <label>Salary Range</label>
+                        <select class="w3-select" name="option">
+                          <option value="" disabled selected>$8,000 - $10,000</option>
+                          <option value="1">$10,000 - $12,000 </option>
+                          <option value="2">$12,000 - $14,000</option>
+                          <option value="3">$14,000 and Above</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="formSection"><p>Contact Information</p></div>
+                    <div class="w3-row w3-section">
+                      <div class="w3-rest">
+                        <label>Phone Number</label>
+                        <input class="w3-input w3-border" type="text">
+                      </div>
+                    </div>
+                    <div class="w3-row w3-section">
+                      <div class="w3-rest">
+                        <label>Email</label>
+                        <input class="w3-input w3-border" type="text">
+                      </div>
+                    </div>
+                    <button class="w3-button positive">Continue</button>
+                    <button class="w3-button negative">Cancel</button>
+                  </form>
+                </div>
+              </div>
+              
+              <div class="w3-quarter">
+                <div class="w3-card padding10" style="margin:0 0 60px 0;">
+                    <div class="w3-row"><div class="w3-col m4">
+                    <img src="https://blogpr.000webhostapp.com/upload/ssi.png" style="width: 57px;height: 85px;" alt="QR">
+                  </div>
+                  <div class="w3-col m8">
+                    <p>If you are an existing SSI customer,<br><a href="#" style="color: #009688; font-weight: bolder;" onclick="document.getElementById('id01').style.display='block'">Click Here</a> to apply.</p>
+                  </div> 
+                </div>
+                </div>
+                <div class="w3-card padding10" style="margin:0 0 60px 0;position:relative;">
+                  <img src="https://blogpr.000webhostapp.com/upload/mortgages1511.png" style="width:100px;height:100px;position: absolute; top: -37px; left: 70PX;" alt="QR">
+                  <div class="w3-container w3-center">
+                    <img src="https://blogpr.000webhostapp.com/upload/1.png" style="width:85%;height:68px;margin:46px 0 0 0" alt="Advertisement 1">
+                  </div>
+                </div>
+                <div class="w3-card padding10">
+                  <div class="w3-container w3-center">
+                    <img src="https://blogpr.000webhostapp.com/upload/2.png" style="width:90%;height:130px;" alt="Advertisement 2">
+                    </div>
+                </div>
+              </div>
+            </div>
+    
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content">
+                  <header class="w3-container w3-teal">
+                      <span onclick="document.getElementById('id01').style.display='none'"
+                      class="w3-button w3-display-topright crossButton">&times;</span>
+                      <h5>QR Code</h5>
+                    </header>
+                  <div class="w3-container" style="padding: 90px 0;">
+                    <div class="w3-container w3-center">
+                      <img src="https://blogpr.000webhostapp.com/upload/QRCode.png" style="width:150px;height:150px;" alt="QR">
+                    </div>
+                    <!-- <div class="w3-row">
+                      <button class="w3-button positive">Continue</button>
+                      <button class="w3-button negative">Cancel</button>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+      </div>
+    
+    
+                  
+                  
+                
+    <!-- Footer -->
+    
+    <footer class="w3-container w3-center w3-black">
+      <p>Powered by NextGEN Bank</a></p>
+    </footer>
+    </div>
     <div id="harry" class="tab" style="display:none;width:50%; border:1px solid #ccc;">
         <body>
           <header class="w3-container w3-card-4 w3-theme">
